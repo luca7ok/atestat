@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE13A47D-C7BA-4667-9B35-349598B18023}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>basketball_tournament</RootNamespace>
+    <AssemblyName>basketball_tournament</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="tournamentDataSet.cs">
+      <DependentUpon>tournamentDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tournamentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tournamentDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tournamentDataSet.xsc">
+      <DependentUpon>tournamentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tournamentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tournamentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tournamentDataSet.xss">
+      <DependentUpon>tournamentDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clippers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lakers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\london.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mavericks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuggets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oradea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warriors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\somacescu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baciu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beasley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brussino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bryce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caldwell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmorgan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\damian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\derrick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doncic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draymond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitzpatrick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freeman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gafford.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giannis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gordon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grantham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jantunen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jokic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kawhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krisrichard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kuminga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lammers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lebron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malcolm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\middleton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmorgan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\murray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paulius.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pelos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\petrica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pridgett.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reaves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shorts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slaughter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stipe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarolis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\westbrook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wiggins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zubac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-felixmittermeier-1146134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\161084.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7672043.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
