@@ -1,9 +1,0 @@
-C:\.richbank\c#\basketball_tournament\basketball_tournament\bin\Debug\basketball_tournament.exe
-C:\.richbank\c#\basketball_tournament\basketball_tournament\bin\Debug\basketball_tournament.pdb
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.Form1.resources
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.Properties.Resources.resources
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.csproj.GenerateResource.Cache
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.exe
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.pdb
-C:\.richbank\c#\basketball_tournament\basketball_tournament\bin\Debug\basketball_tournament.exe.config
-C:\.richbank\c#\basketball_tournament\basketball_tournament\obj\x86\Debug\basketball_tournament.csprojResolveAssemblyReference.cache
